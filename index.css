@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Space Mono', monospace;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: black;
+    text-align: center;
+    color: rgb(243, 243, 243);
+    background-color: #5f35fd;
+    background-image: linear-gradient(43deg, #202020 0%, #181818a6 46%, #202020 100%);
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        width: auto;
+        padding: 0;
+        float: none;
+    }
+}
+
+#container {
+    margin-top: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin-inline: auto;
+    border: 2px;
+    transition: 0.25s;
+    padding: 2%;
+    border-radius: 50px;
+    background-color: #141414;
+    border-radius: 25px;
+    -webkit-box-shadow: 10px 10px 40px -3px rgba(0,0,0,0.58);
+    -moz-box-shadow: 10px 10px 40px -3px rgba(0,0,0,0.58);
+    box-shadow: 10px 10px 40px -3px rgba(0,0,0,0.58);
+    transition: 0.5s;
+    animation: ease-in;
+}
+
+img {
+    transition: .1s;  
+}
+
+img:hover {
+    filter: brightness(1.2);
+}
+
+h1
+{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+p
+{
+    margin-bottom: 40px;
+    opacity: 0.7;
+    font-size: 20px;
+}
+
+input, button {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+input
+{
+    width: 100%;
+    align-items: center;
+}
+
+input {
+    margin-bottom: 20px;
+    background-color: rgba(63, 63, 63, 0.42);
+    color: aliceblue;
+    transition: filter .5s;
+    border: none;
+}
+
+input:hover {
+    filter: brightness(1.2);
+}
+
+input::placeholder {
+    color: aliceblue;
+    cursor: pointer;
+}
+
+button {
+    background-color: #5f35fd;
+    color: aliceblue;
+    transition: filter .5s;
+    border: none;
+}
+
+button:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+#resposta {
+    margin-top: 30px;
+    transition: opacity 1s;
+}
+
+#resposta div {
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+/* ========= MOBILE =========*/
+
+@media screen and (max-width: 600px) {
+    #container {
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 4%;
+        font-size: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        opacity: 0.9;
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    p {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        opacity: 0.9;
+        font-size: 18px;
+    }
+}
